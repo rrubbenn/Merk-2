@@ -1,0 +1,157 @@
+body{
+    font-family: 'Harmattan', sans-serif;
+}
+
+.futer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.bodyregistro{
+    position: relative;
+    padding-bottom: 0%;
+    font-family: 'Harmattan', sans-serif;
+
+}
+
+.icono{
+    width:200px;
+}
+
+.imgperfil{
+    width:50%;
+    height:30%;
+}
+
+.imgvaloraciones {
+
+    width:100px;
+
+}
+
+.imgproductoperfil {
+
+    height:5vw;
+    object-fit: contain;
+
+}
+
+.imgproducto {
+
+    height: 40vw;
+    object-fit: cover;
+
+}
+
+.imgcard {
+    height: 25vw;
+    object-fit: contain; /* Esto asegura que la imagen se ajuste correctamente manteniendo su relación de aspecto */
+}
+
+.img-carousel {
+    width: 100%;
+    height: auto; /* Mantiene la proporción */
+    max-height: 400px; /* Ajusta la altura máxima según tu diseño */
+    object-fit: contain; /* Evita el recorte y ajusta la imagen dentro del espacio */
+}
+
+.carousel-elements,
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(70%); /* Hace la flecha más clara */
+}
+
+  /* CSS MODAL */
+ 
+.modal-container{
+    display: none; 
+    position: fixed; 
+    z-index: 99; 
+    width: 100vw; 
+    height: 100vh; 
+    left: 0;
+    top: 0;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.modal-contenido{
+    position: relative;
+    background-color: whitesmoke;
+    margin: auto;
+    padding: 25px;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation: .5s aparecerModal;
+}
+
+.cerrar{
+    color: darkgray;
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.cerrar:hover{
+    color: darkred;
+    transition: 0.2s;
+}
+
+input[type=file]{
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #e1e1e1;
+    border-radius: 0;
+    max-width: 100%;
+    width: 100%;
+    border-right: 1px solid #e1e1e1;
+    margin-right: 20px;
+    transition: .5s;
+}
+
+input[type=file]::file-selector-button {
+    background-color: #fff;
+    color: #000;
+    border: 0px;
+    border-right: 1px solid #e1e1e1;
+    padding: 10px 15px;
+    margin-right: 20px;
+    transition: .5s;
+  }
+  
+input[type=file]::file-selector-button:hover {
+    background-color: #eee;
+    border: 0px;
+    border-right: 1px solid #e1e1e1;
+}
+
+@media (max-width: 800px) {
+    .imgproductoperfil {
+        height: 15vw; /* Ajusta el tamaño según lo necesites */
+    }
+    .imgperfil{
+        width:60%;
+        height:50%;
+    }
+    .modal-contenido{
+        position: relative;
+        background-color: whitesmoke;
+        margin: auto;
+        padding: 25px;
+        /* border: 1px solid black; */
+        border-radius: 20px;
+        width: 80%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        animation: .5s aparecerModal;
+    }
+}
+
