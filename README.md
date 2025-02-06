@@ -26,7 +26,9 @@ Este proyecto está construido con las siguientes tecnologías:
 - **Búsqueda y Filtrado**: Permite a los usuarios buscar productos por categoría, precio, ubicación, etc.
 - **Panel de Administración**: Gestión de usuarios, productos y valoraciones para administradores.
 
-## 📸 Capturas de pantalla
+## 📸 Demo / Showcase
+
+[🎥 Ver video de demostración](https://youtu.be/AG9GBc6OvXA)
 
 Aquí puedes ver algunas capturas de pantalla de la aplicación funcionando:
 
